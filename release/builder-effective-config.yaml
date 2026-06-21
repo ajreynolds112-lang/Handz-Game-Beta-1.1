@@ -1,0 +1,15 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.handz.game
+productName: Handz
+files:
+  - filter:
+      - main.js
+      - dist/**/*
+extraResources:
+  - from: node_modules/better-sqlite3
+    to: node_modules/better-sqlite3
+mac:
+  category: public.app-category.games
+electronVersion: 42.4.1
